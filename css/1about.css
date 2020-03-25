@@ -1,0 +1,204 @@
+#aboutContainer {
+    display: inline-grid;
+    z-index: 77;
+    width: 35vw;
+    float: right;
+    padding-right: 7vw
+}
+
+#aboutContainerLeft {
+    float: left;
+    position: absolute;
+    top: 0;
+    height: 100%
+}
+
+#bigimage1 {
+    transform: translate(6vw, 6vw);
+    width: 47.25vw;
+    height: 75%;
+    position: absolute;
+    background-image: url(../img/jpg/will-turner-KPCXuBucEps-unsplash.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(.65) brightness(1.3)
+}
+
+#bigimage2 {
+    width: 25vw;
+    height: 32vh;
+    position: absolute;
+    transform: translate(38vw, 63vh);
+    background-image: url(../img/jpg/twentyonekoalas-yjQcjz8or3E-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(.75) brightness(1.1);
+    background-position-y: 60%
+}
+
+#bigimage3 {
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    filter: drop-shadow(0 0 2vw #e6e4e0);
+    transform: translate(34vw, 55vh) rotate(-22.5deg);
+    background-image: url(../img/png/wildemblem1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9
+}
+
+.linker {
+    border-bottom: 1px solid #000;
+    color: #434343;
+    font-family: Yucca;
+    font-size: .85vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5vw;
+    padding-bottom: 4px;
+    text-align: center;
+    transform: scale(1, 1.15) rotate(-1deg);
+    width: 35%;
+    z-index: 77
+}
+
+.wildpeeps {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5vw;
+    text-align: center;
+    width: 25%;
+    z-index: 22
+}
+
+#section1 {
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/jpg/webbg.jpg)
+}
+
+#aboutHeader {
+    font-family: Yucca;
+    z-index: 88
+}
+
+@media only screen and (min-width:1600px) {
+    #aboutHeader {
+        font-family: Yucca;
+        font-size: 2.5vw
+    }
+    #aboutParagraph {
+        font-size: 1.2vw;
+        margin-top: 1vw;
+        z-index: 25
+    }
+    #aboutParagraph2 {
+        font-size: 1.2vw;
+        margin-top: 1vw;
+        z-index: 25
+    }
+}
+
+@media only screen and (max-width:1600px) {
+    #bigimage3 {
+        display: none
+    }
+    #bigimage1 {
+        transform: none;
+        width: 100vw;
+        height: 50%;
+        opacity: .4;
+        z-index: 0;
+        -webkit-mask-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+        mask-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0))
+    }
+    #bigimage2 {
+        width: 100vw;
+        height: 50%;
+        transform: translate(0vw, 100%);
+        opacity: .4;
+        z-index: 0;
+        -webkit-mask-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
+        mask-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0))
+    }
+    #aboutContainer {
+        display: inline-grid;
+        z-index: 77;
+        width: 70vw;
+        float: none;
+        padding-right: 0vw
+    }
+    #aboutHeader {
+        font-family: Yucca;
+        font-size: 4.25vw
+    }
+    #aboutParagraph {
+        font-size: 1.75vw;
+        margin-top: 1vw
+    }
+    #aboutParagraph2 {
+        font-size: 1.75vw;
+        margin-top: 1.25vw
+    }
+    .linker {
+        font-size: 1.25vw;
+        width: 30%;
+        margin-top: 4vw
+    }
+    .wildpeeps {
+        width: 20%
+    }
+}
+
+@media only screen and (max-width:980px) {
+    #bigimage1 {
+        transform: none;
+        width: 100vw;
+        height: 50%;
+        opacity: .4;
+        z-index: 0;
+        -webkit-mask-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+        mask-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0))
+    }
+    #bigimage2 {
+        width: 100vw;
+        height: 50%;
+        transform: translate(0vw, 100%);
+        opacity: .4;
+        z-index: 0;
+        -webkit-mask-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
+        mask-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0))
+    }
+    #aboutContainerLeft {
+        height: 100%
+    }
+    #aboutContainer {
+        display: inline-grid;
+        z-index: 77;
+        width: 75vw;
+        float: none;
+        padding-right: 0vw
+    }
+    .linker {
+        font-size: 1.5vw;
+        width: 30%;
+        margin-top: 4.5vw
+    }
+    #aboutHeader {
+        font-family: Yucca;
+        font-size: 5.5vw
+    }
+    #aboutParagraph {
+        font-size: 2.3vw;
+        margin-top: 2vw
+    }
+    #aboutParagraph2 {
+        font-size: 2.3vw;
+        margin-top: 1.5vw
+    }
+}

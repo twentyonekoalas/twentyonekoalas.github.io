@@ -1,0 +1,124 @@
+#introHeader {
+    color: #333;
+    line-height: .8
+}
+
+@media only screen and (min-width:980px) {
+    #section0 {
+        background-color: #d8d5da;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/jpg/mainbg.jpg);
+        z-index: -2
+    }
+    #section0::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to left, rgba(199, 182, 210, .24) 40vw, #ffffff00);
+        z-index: -1
+    }
+    #introContainer {
+        width: 40vw;
+        float: left;
+        padding-left: 7vw;
+        padding-top: 25vh
+    }
+    #introSpinner {
+        position: absolute;
+        width: 14vw;
+        transform: translate(9vw, -2.5vw) rotate(45deg);
+        opacity: .1;
+        z-index: 1
+    }
+    #introHeader {
+        font-family: Yucca;
+        font-size: 2.5vw;
+        z-index: 25
+    }
+    #introParagraph {
+        font-size: 1.4vw;
+        margin-top: 1.2vw;
+        z-index: 25
+    }
+    #introParagraph2 {
+        font-size: 1.4vw;
+        margin-top: 1vw;
+        z-index: 25
+    }
+    #introImg {
+        width: 7vw;
+        margin-top: 2.5vw;
+        z-index: 25;
+        padding-bottom: 12vh
+    }
+    #introContainer {
+        display: inline-block;
+        z-index: 77
+    }
+}
+
+@media only screen and (max-width:980px) {
+    #introSpinner {
+        position: absolute;
+        width: 25vw;
+        transform: translate(17vw, -3vw) rotate(45deg);
+        opacity: .075;
+        z-index: 1
+    }
+    #introContainer {
+        width: 75vw
+    }
+    #section0 {
+        background-color: #d4cfd8c0!important;
+        background-image: url(../img/jpg/mainbg.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+    #section0::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(#ffffff00, #d8d5da, #ffffff00);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scale(1.1) translate(4vw, 0)
+    }
+    #introParagraph {
+        font-size: 2.5vw;
+        margin-top: 2vw
+    }
+    #introParagraph2 {
+        font-size: 2.5vw;
+        margin-top: 1.5vw
+    }
+    #introHeader {
+        font-family: Yucca;
+        font-size: 5.5vw
+    }
+    #introImg {
+        width: 12vw;
+        margin-top: 4vw
+    }
+    #introContainer {
+        display: inline-block;
+        z-index: 77;
+        padding-left: 0vw
+    }
+    #introContainerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+}

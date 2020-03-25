@@ -1,0 +1,65 @@
+#emailText {
+    font-size: 7vw;
+    background: url(../img/jpg/photo-1509114397022-ed747cca3f65.jpg) no-repeat;
+    -webkit-text-fill-color: transparent;
+    background-position: right;
+    background-position: right;
+    background-size: cover;
+    background-position-y: 48.2%;
+    z-index: 25;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#section4 {
+    z-index: -2
+}
+
+#section4:before {
+    background: url(../img/jpg/eberhard-grossgasteiger-NvesrDbsrL4-unsplash.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: cloudzoom 24s infinite;
+    animation-timing-function: ease-in-out;
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1
+}
+
+@keyframes cloudzoom {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.05)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes textzoom {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.1)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+@media only screen and (max-width:1600px) {
+    #contactpaddertop {
+        padding-top: 25vw
+    }
+    #contactpadderbottom {
+        padding-bottom: 25vw
+    }
+}

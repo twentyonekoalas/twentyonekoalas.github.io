@@ -1,0 +1,47 @@
+.nav{flex-direction:row;width:100%;position:fixed;top:0;width:100%;font-family:Yucca;z-index:99;display:flex;align-items:center}
+.left,.middle,.right{padding:2vw}
+.left{width:20vw;font-size:2vw}
+.middle{text-align:center;width:60vw;display:flex;flex-direction:row;font-size:1vw}
+.right{text-align:right;width:20vw;font-size:1vw}
+.item{display:inline-block;flex:1}
+.item:after{display:block;content:"";width:0;height:2px;background:#444;top:100%;left:0;opacity:0;z-index:-1;-wekkit-transition:all .4s;transition:all .4s;margin:0 auto}
+.item:hover:after{width:25%;opacity:1;margin:0 auto}
+
+#menu li{display:inline-block;margin:0vw 1.5vw}
+#menu li a{text-decoration:none}
+#menu li a{display:block}
+#menu{font-family:Yucca;position:fixed;top:0;left:0;z-index:70;width:100%;padding:0;margin:0;visibility:hidden;text-align:center}
+.navitem{position:relative;padding-bottom:.25vw}
+.navitem:after{display:block;content:"";width:0;height:2px;background:#444;top:100%;left:0;opacity:0;z-index:-1;-wekkit-transition:all .4s;transition:all .4s;margin:0 auto}
+.navitem:hover:after{width:75%;opacity:1;margin:0 auto}
+#logo:hover:after{width:5%!important;opacity:1;margin:0 auto}
+#logo{font-size:1.9vw;color:#333;transition:color .4s;z-index:99;font-family:Yucca}
+#logo:hover{color:#272727;transition:color .4s}
+.navitem{font-size:.85vw}
+#logo{margin-top:2vw;margin-bottom:.25vw}
+#coordinates{font-family:Yucca;left:3%;position:fixed;text-orientation:mixed;top:50%;transform:translate(-50%,-50%);writing-mode:vertical-rl;z-index:2;opacity:.9}
+#coordinates a{z-index:2}
+#cornerLogo{z-index:22;width:5vw;top:2vw;right:2vw;position:fixed;opacity:.85}
+
+@media only screen and (max-width:980px){
+.nav{visibility:hidden}
+#menu{visibility:visible}
+#cornerLogo{width:7vw}
+#coordinates{font-size:100%}
+#logo{margin-top:4vw}
+#logo{font-size:4.25vw}
+.navitem{font-size:1.75vw}
+}
+
+@media only screen and (min-width:980px){
+#coordinates{font-size:120%}
+}
+@media only screen and (min-width:1600px) and (orientation:portrait){
+#coordinates{font-size:150%}
+}
+@media only screen and (min-width:2300px) and (orientation:portrait){
+#coordinates{font-size:175%}
+}
+@media only screen and (max-width:980px) and (orientation:landscape){
+#coordinates{font-size:65%}
+}
